@@ -21,7 +21,7 @@ public class ReverseString {
 			System.out.print("Enter the string: ");
 			String s1=sc.next();
 			String s2=reverse(s1);
-			System.out.println("Reversed String => "+s2);
+			System.out.println("Reversed String: "+s2);
 		}
 		sc.close();
 	}
