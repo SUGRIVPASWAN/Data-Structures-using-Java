@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Menu_driven_List {
+public class Menu_driven_Linked_List {
 
 	static class Node {
 		int data;
@@ -16,7 +16,7 @@ public class Menu_driven_List {
 
 	static Node head;
 
-	public static Menu_driven_List insert(Menu_driven_List li, int data) {
+	public static Menu_driven_Linked_List insert(Menu_driven_Linked_List li, int data) {
 		Node newNode = new Node(data);
 		newNode.next = null;
 		if (li.head == null)
@@ -31,7 +31,7 @@ public class Menu_driven_List {
 		return li;
 	}
 
-	public static void display(Menu_driven_List li) {
+	public static void display(Menu_driven_Linked_List li) {
 		Node temp = li.head;
 		while (temp != null) {
 			System.out.println(temp.data);
@@ -39,7 +39,7 @@ public class Menu_driven_List {
 		}
 	}
 
-	public static void deleteByIndex(Menu_driven_List li, int index) {
+	public static void deleteByIndex(Menu_driven_Linked_List li, int index) {
 		Node current = li.head;
 		Node previous = null;
 
@@ -69,7 +69,7 @@ public class Menu_driven_List {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		Menu_driven_List li = new Menu_driven_List();
+		Menu_driven_Linked_List li = new Menu_driven_Linked_List();
 		System.out.println("Do you want to enter the app: y/n");
 		char c = s.next().charAt(0);
 		try {
@@ -81,7 +81,7 @@ public class Menu_driven_List {
 
 				case 1:
 
-					System.out.println("How many elemnets you want to insert?");
+					System.out.println("How many elements you want to insert?");
 					int n = s.nextInt();
 					for (int i = 0; i < n; i++) {
 						System.out.println("Enter the " + (i + 1) + " element:");
