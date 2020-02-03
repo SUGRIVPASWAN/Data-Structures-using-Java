@@ -60,7 +60,7 @@ public class SumOfTwoNumbersLinkedList {
 			temp = temp.next;
 			n2--;
 		}
-		//System.out.print(num1 + " " + num2);
+		
 		sum = num1 + num2;
 		int s1;
 		SumOfTwoNumbersLinkedList l3 = new SumOfTwoNumbersLinkedList();
